@@ -1,0 +1,344 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #EFF9FF;
+    font-family: Outfit, sans-serif;
+}
+.none {
+    display: none;
+}
+.navbar-brand img {
+    max-height: 37px;
+}
+.navbar-toggler {
+    border: none;       
+    outline: none;     
+    padding: 0.25rem 0.5rem; 
+    background-color: transparent;
+    box-shadow: none;  
+}
+.btn-custom {
+    padding: 8px 20px;
+    margin-left: 10px;
+    border: none;
+    text-decoration: none;
+}
+.text {
+    font-size: clamp(14px, 2.5vw, 18px);
+    font-weight: 400; 
+    margin-left: 20px;
+    color: #2A3853;
+    letter-spacing: -1px;
+}
+.button-group {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px #D1D3E352;
+    padding: 8px;
+    max-width: 1160px;
+    height: auto;
+    gap: 60px;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    color: #162238;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    letter-spacing: -1px;
+    min-width: 200px;
+    height: 64px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.btn.active {
+    background-color: #DDF3FF;
+    color: #66C1EE;
+    border: #66C1EE 2px solid;
+    border-radius: 16px;
+}
+
+.btn.active img {
+    filter: brightness(0) saturate(100%) invert(62%) sepia(20%) saturate(2451%) hue-rotate(176deg) brightness(97%) contrast(91%);
+}
+
+#content-icon.active {
+    filter: brightness(0) saturate(100%) invert(62%) sepia(20%) saturate(2451%) hue-rotate(176deg) brightness(97%) contrast(91%);
+}
+
+.img-group {
+    width: 32px;
+}
+
+.cont-label {
+    font-size: 35px;
+    font-weight: 500;
+    color: #66C1EE;
+    letter-spacing: -1px;
+}
+
+.con-card {
+    margin-top: 150px;
+}
+
+.content {
+    padding: 0 12px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 24px;
+    border: none;
+    box-shadow: 0 10px 30px #D1D3E352;
+    padding: 15px;
+    cursor: pointer;
+    margin: 10px auto;
+    max-width: 16rem;  
+}
+
+.card-text {
+    font-size: clamp(14px, 2.5vw, 18px); 
+    font-weight: 500; 
+    color: #162238;
+    padding: 10px 0;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.con-text {
+    margin-left: 80px; 
+    margin-top: 60px;
+}
+
+.card-1 {
+    background-color: #fff;
+    border-radius: 24px;
+    border: none;
+    box-shadow: 0 10px 30px #D1D3E352;
+    padding: 30px;
+    cursor: pointer;
+    margin: 10px;
+    max-width: 465px;  
+}
+
+.question-card {
+    background-color: #fff;
+    border-radius: 24px;
+    border: none;
+    box-shadow: 0 10px 30px #D1D3E352;
+    padding: 20px;
+    cursor: pointer;
+    max-width: 760px;  
+}
+
+.con-bef {
+    padding-top: 20px;
+}
+
+.answer {
+    display: none;
+    margin-top: -5px;
+    transition: all 0.3s ease;
+}
+
+.question-card.active .answer {
+    display: block;
+}
+
+.btn-show img {
+    transition: transform 0.2s ease;
+}
+
+.question-card.active .btn-show img {
+    transform: rotate(180deg);
+}
+
+.half-bg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #EFF9FF;
+    border-top: 1px solid #E0E3EB;
+    z-index: 0;
+}
+
+.footer-card {
+    background-color: #66C1EE;
+    border-radius: 24px;
+    border: none;
+    max-width: 1300px;
+    position: relative;
+    z-index: 1;
+    padding: 30px 20px 0 80px;
+    gap: 40px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    max-width: 166px;
+}
+
+.footer-tagline {
+    color: #162238;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+}
+
+.social-btn img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-bottom {
+    border-color: #E0E3EB !important;
+}
+
+.footer-copy {
+    color: #959EAE;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.footer-links a {
+    color: #959EAE;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    margin: 10px 0;
+}
+
+.footer-links a:hover {
+    color: #162238;
+}
+
+@media (min-width: 768px) {
+    .footer-card {
+        flex-direction: row;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 1200px) {
+    .button-group {
+        max-width: 950px;
+        gap: 30px;
+    }
+    .button {
+        font-size: 16px;
+        width: 180px;
+    }
+    .card {
+        width: 60%;
+        margin: 5px auto;
+    }
+    .img-card {
+        width: 100%;
+    }
+    .footer-card {
+        text-align: center;
+    }
+}
+@media (min-width: 990px) and (max-width: 1200px) {
+    .content {
+        padding-left: 100px;
+    }
+}
+@media (max-width: 991px) {
+    .responsive-img {
+        width: 80%;
+    }
+    .card {
+        width: 40%;
+        margin: 5px auto;
+    }
+    .navbar-collapse {
+        background-color: #EFF9FF;
+        border-top: 1px solid #dbe8f2;
+        padding: 1rem 0;
+    }
+    .navbar-collapse .btn {
+        width: 80%;
+        margin: 0.3rem auto;
+    }
+    .navbar-collapse .btn-custom {
+        background-color: transparent;
+        color: #162238;
+    }
+    .con-text {
+        margin-left: -20px; 
+        margin-top: 0;
+    }
+    .img-card {
+        width: 100%;
+    }
+    .footer-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px 0 20px;
+    }
+    .footer-tagline {
+        font-size: 18px;
+    }
+    .social-btn {
+        width: 44px;
+        height: 44px;
+    }
+    .social-btn img {
+        width: 38px;
+        height: 38px;
+    }
+}
+@media (max-width: 576px) {
+    .responsive-img {
+        width: 70%;
+    }
+    .cont-label {
+        font-size: 20px;
+    }
+    .con-card {
+        margin-top: 50px;
+    }
+    .card {
+        width: 35%;
+        aspect-ratio: 1 / 1;
+        margin: 5px;
+    }
+    .con-text {
+        margin-left: -20px; 
+        margin-top: 0;
+    }
+    .card-text {
+        padding: 0;
+    }
+    .footer-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px 0 20px;
+    }
+    .image-section {
+        width: 300px;
+    }
+}
